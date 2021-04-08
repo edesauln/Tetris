@@ -51,8 +51,8 @@ public class Playfield : MonoBehaviour {
     public static bool isRowFull(int y) {
         for (int x = 0; x < width; x++)
             if (grid[x, y] == null)
-                return true;
-        return false;
+                return false;
+        return true;
     }
 
     // Deletes all rows that have been completed
